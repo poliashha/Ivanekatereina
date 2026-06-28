@@ -15,6 +15,10 @@ background-image: url(../img/fon.jpg);
   position: relative;
 }
 
+.header-text{
+  font-size:clamp(3.4375rem, 24.3243vw + -2.2635rem, 4rem);;
+}
+
 .first-krugevo{
   margin-right: 369px;
 }
