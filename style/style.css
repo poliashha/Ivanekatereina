@@ -1,0 +1,636 @@
+body{
+background-image: url(../img/fon.jpg);
+}
+
+.kursiv{
+  font-family: var(--kursiv-text);
+  font-size: 64px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.header{
+  max-width: 412px;
+  margin: auto;
+  position: relative;
+}
+
+.first-krugevo{
+  margin-right: 369px;
+}
+
+.foto{
+  position: absolute;
+  top: 66px;
+  right: 12px;
+  max-width: 155px;
+}
+
+.first{
+  position: absolute;
+  top: 93px;
+  left: 73px;
+}
+
+.second{
+  position: absolute;
+  top: 133px;
+  left: 176px;
+}
+
+.third{
+  position: absolute;
+  top: 161px;
+  left: 31px;
+}
+
+.polosa{
+  margin-top: -30px;
+}
+
+.data{
+margin-bottom: 40px;
+}
+
+.text-header{
+  font-family: var(--time-font);
+  font-size: 15px;
+  color: #545454;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.date{
+  font-size: 24px;
+  padding-top: 7px;
+}
+
+.position-header{
+  position: absolute;
+bottom: 70px;
+left: 130px;
+}
+
+.audio {
+  width: 54px;
+  height: 42px;
+  border:1px solid rgb(124, 17, 17);
+  border-radius: 50%;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.audio.fixed {
+  position: fixed;
+  top: 30px;
+  right: 15px;
+  z-index: 3;
+  animation: fix 0.5s ease forwards;
+}
+
+@keyframes fix {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.text-audio {
+  font-size: 17px;
+  line-height: 141%;
+  color: var(--color-text-green);
+  z-index: 2;
+  text-align: center;
+  font-family: var(--main-font);
+}
+
+.black-line {
+  height: 33px;
+  width: 1px;
+  background-color: var(--color-text-green);
+  display: block;
+  z-index: 2;
+}
+
+.but-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 100px;
+}
+
+.box-music {
+  display: flex;
+  align-items: center;
+}
+
+.date-text {
+  font-size: 48px;
+}
+
+.music {
+  pointer-events: none;
+}
+
+.position-button {
+  position: absolute;
+  top: 14px;
+  left: 19px;
+  z-index: 2;
+}
+
+.music-button {
+  position: relative;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  gap: 90px;
+  max-width: 412px;
+  margin: auto;
+}
+
+.music-card{
+  padding: 0 20px;
+}
+
+.music-bth{
+  pointer-events: none;
+}
+
+.red{
+  color: var(--kursiv-color);
+  line-height: 81%;
+}
+
+.title{
+  font-family: var(--main-font);
+  font-size: 24px;
+  text-align: center;
+}
+
+.dear{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 0 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendar{
+  margin: -28px;
+}
+
+.timing{
+  align-self: start;
+}
+
+
+.krugevo{
+  margin-bottom: -90px;
+}
+
+.bordo{
+  background-color: var(--background-color);
+  color: var(--color-text);
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+
+.place{
+  margin: 0 7px;
+}
+
+.map-button{
+  border: 1px solid var(--color-text);
+  background-color: transparent;
+  width: 252px;
+  height: 34px;
+  padding-bottom: 34px;
+  margin-bottom: 40px;
+}
+
+.href{
+  text-decoration: none;
+  margin-bottom: 3px;
+}
+
+.replace{
+  margin-top: -90px;
+  transform: rotateX(180deg);
+}
+
+.dress-text{
+  line-height: 115%;
+font-variant: small-caps;
+padding: 0 20px;
+}
+
+.circle{
+  margin-top: -20px;
+}
+
+.dital{
+  padding: 0 25px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-top: -48px;
+  padding: 0 30px;
+  color: var(--color-text);
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: auto;
+  transition: height 0.3s ease;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.custom-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-circle {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--color-text);
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.input {
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid var(--color-text);
+  background-color: transparent;
+  max-width: 330px;
+  width: 100%;
+  height: 29px;
+  margin-top: 9px;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  outline: none;
+  transition: 0.3s all ease;
+}
+
+.input:focus {
+  border: 1px solid var(--color-text);
+}
+
+.input::placeholder {
+  color: var(--color-text);
+  margin-left: -7px;
+}
+
+.custom-radio:hover .radio-circle {
+  border-color: var(--color-text);
+}
+
+.custom-radio input[type="radio"]:checked + .radio-circle {
+  border-color: var(--color-text);
+  background: var(--color-text);
+}
+
+.radio-text {
+  text-align: left;
+  font-size: 18px;
+  font-family: var(--timer-font);
+  font-weight: 400;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.checkbox__input {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-text);
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  outline: none;
+  border-radius: 0;
+}
+
+.checkbox__input:checked::after {
+  content: "✓";
+  font-size: 12px;
+}
+
+.button {
+  max-width: 320px;
+  width: 100%;
+  transition: all 0.3s ease;
+  padding: 2px 0;
+  justify-self: center;
+  align-self: center;
+  font-family: var(--timer-font);
+  background-color: transparent;
+  border: 1px solid var(--color-text);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.button.touch-pressed {
+  background-color: var(--color-text);
+  color: var(--bg-color);
+}
+
+.anketa {
+  color: var(--color-text);
+  padding: 0 40px;
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--color-text);
+    color: var(--bg-color);
+  }
+}
+
+.form-send {
+  text-align: center;
+}
+
+.error-text {
+  display: none;
+}
+
+.error-text.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+.radio-error {
+  display: none;
+  text-align: left;
+  font-size: 16px;
+  font-family: var(--main-font);
+}
+
+.radio-error.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.varints-text {
+  padding-bottom: 5px;
+}
+
+.varints {
+  padding-bottom: 13px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.custom-radio {
+  font-size: 18px;
+  text-align: left;
+}
+
+.checkbox {
+  font-size: 18px;
+}
+
+.error-icon {
+  font-size: 16px;
+}
+
+.text-input {
+  font-family: var(--timer-font);
+}
+
+.input_box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  font-family: var(--timer-font);
+}
+
+.form{
+  padding-bottom: 20px;
+}
+
+.anketa-text{
+  font-size: 18px;
+  font-family: var(--main-font);
+  margin-top: -20px;
+  text-align: center;
+}
+
+.mini{
+  text-align: left;
+  font-size: 12px;
+  margin-bottom: 2px;
+}
+
+.begevi{
+  color: var(--color-text);
+}
+
+.anketa-line{
+margin-bottom: -42px;
+}
+
+.text-footer{
+  color: #591C1E;
+  font-size: 40px;
+  line-height: 129%;
+}
+
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.no-scroll{
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.convert-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  transition: all 0.3s ease;
+  z-index: 2; /* Выше, чем main-content */
+  position: relative;
+  /* background-color: #F5E9D5; */
+}
+
+/* Контейнер анимации */
+.animation-convert {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  cursor: pointer;
+  width: 500px;
+  height: 1000px;
+}
+
+/* Кнопка - поверх всех */
+.animation-convert button {
+  position: absolute;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: opacity 1.2s ease;
+  pointer-events: none;
+  top: 441px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* up.png - под кнопкой */
+.up {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 6;
+  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* down.png - под кнопкой */
+.down {
+  position: absolute;
+  top: 17%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  pointer-events: none;
+}
+
+/* conver.jpg - под всеми (фон конверта) */
+.animation-convert .convert {
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  pointer-events: none;
+  width: 412px;
+  height: auto;
+  opacity: 1;
+  transition:
+    opacity 1.2s ease;
+}
+
+/* Дополнительная область клика */
+.click-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  cursor: pointer;
+}
+
+/* Классы для анимации */
+.animation-convert.animate button {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.animation-convert.animate .up {
+  transform: translateX(-50%) translateY(-400px);
+  opacity: 0;
+}
+
+.animation-convert.animate .down {
+  transform: translateX(-50%) translateY(400px);
+  opacity: 0;
+}
+
+.animation-convert.animate .convert {
+  opacity: 0;
+  transform: translateX(-50%);
+}
+
+/* Скрытие всего блока */
+.convert-wrapper.hidden {
+  display: none;
+}
+
+/* Контент, который появляется после анимации - СНИЗУ */
+.main-content {
+  position: absolute; /* Абсолютное позиционирование */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1; /* Меньше, чем у convert-wrapper (который z-index: 2) */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+  text-align: center;
+}
+
+.main-content.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+body {
+  position: relative;
+  
+}

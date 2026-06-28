@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'CormorantGaramond';
+  src:
+    url("./CormorantGaramond-Regular.woff2") format("woff2"),
+    url("./CormorantGaramond-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'marianna';
+  src:
+    url("./marianna.woff2") format("woff2"),
+    url("./marianna.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src:
+    url("./Montserrat-Regular.woff2") format("woff2"),
+    url("./Montserrat-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
