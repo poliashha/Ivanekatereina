@@ -24,16 +24,15 @@ background-image: url(../img/fon.jpg);
 }
 
 .foto{
-  position: absolute;
-  top: 66px;
-  right: 12px;
+  margin-top: -535px;
+  margin-bottom: 273px;
   max-width: 155px;
 }
 
 .first{
-  position: absolute;
-  top: 93px;
-  left: 73px;
+  margin-bottom: 121px;
+  margin-top: -241px;
+  padding-left: 20px;
 }
 
 .second{
@@ -51,6 +50,12 @@ background-image: url(../img/fon.jpg);
 @media (width>400){
   .third{
   left: 3px;
+}
+}
+
+@media (width<400){
+  .second{
+  left: 150px;
 }
 }
 
