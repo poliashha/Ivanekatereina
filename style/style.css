@@ -216,7 +216,7 @@ body {
 }
 
 .bordo {
-  background-color: var(--background-color);
+  background-color: #7E041F;
   color: var(--color-text);
   padding: 40px 20px 0;
   display: flex;
@@ -658,7 +658,7 @@ body {
 
 .position-bth {
   position: absolute;
-  bottom: 76px;
+  bottom: 81px;
 
   color: var(--color-text);
   margin: 0 auto;
